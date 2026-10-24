@@ -1,0 +1,12 @@
+project_id = "lulu"
+
+[api]
+schemas = ["public"]
+
+[auth]
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["lulu://auth-callback"]
+
+[functions.notify]
+# Called by the database trigger with a shared secret header instead of a user JWT.
+verify_jwt = false

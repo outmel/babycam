@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+.env*.local
+
+# Model tooling (large / machine-specific)
+models/.venv/
+models/.work/
+harness/extract/pose_landmarker_lite.task
+
+# Synthetic clips are deterministic: `npm run synth` in harness/ recreates them.
+harness/clips/synthetic-*/

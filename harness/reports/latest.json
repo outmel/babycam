@@ -1,0 +1,1517 @@
+{
+  "generatedAt": "2026-10-24T07:21:41.147Z",
+  "recorded": null,
+  "synthetic": {
+    "clips": 11,
+    "hours": 1.0666666666666667,
+    "byType": [
+      {
+        "type": "cry_detected",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          4
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 4
+      },
+      {
+        "type": "zone_edge",
+        "truePositives": 2,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 2,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          0.7999999999999972,
+          1.200000000000017
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 1.000000000000007
+      },
+      {
+        "type": "zone_exit",
+        "truePositives": 2,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 2,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          1.8000000000000114,
+          1.5999999999999943
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 1.7000000000000028
+      },
+      {
+        "type": "sat_up",
+        "truePositives": 2,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 2,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          3.200000000000003,
+          3.200000000000003
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 3.200000000000003
+      },
+      {
+        "type": "rolled_over",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          4.400000000000006
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 4.400000000000006
+      },
+      {
+        "type": "hazard_near",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          0.3999999999999986
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 0.3999999999999986
+      },
+      {
+        "type": "camera_blocked",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          5
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 5
+      },
+      {
+        "type": "camera_dark",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          10
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 10
+      },
+      {
+        "type": "camera_moved",
+        "truePositives": 1,
+        "falseAlarms": 0,
+        "missed": 0,
+        "duplicates": 0,
+        "labelled": 1,
+        "precision": 1,
+        "recall": 1,
+        "latencies": [
+          3
+        ],
+        "falseAlarmsPerHour": 0,
+        "medianLatency": 3
+      }
+    ],
+    "totals": {
+      "truePositives": 12,
+      "falseAlarms": 0,
+      "missed": 0,
+      "falseAlarmsPerHour": 0,
+      "recall": 1
+    }
+  },
+  "clips": [
+    {
+      "clip": "synthetic-camera-bumped",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-camera-bumped",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              3
+            ]
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "camera_moved",
+          "severity": "warning",
+          "t": 93,
+          "message": "The camera seems to have moved. Check it still points at the crib or play area."
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-climb-out",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-climb-out",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              0.7999999999999972
+            ]
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              1.8000000000000114
+            ]
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              3.200000000000003
+            ]
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "sat_up",
+          "severity": "warning",
+          "t": 58.2,
+          "track": "A",
+          "message": "Child A sat up"
+        },
+        {
+          "type": "zone_edge",
+          "severity": "warning",
+          "t": 71.8,
+          "track": "A",
+          "message": "Child A is at the edge of the crib",
+          "data": {
+            "zone": "crib"
+          }
+        },
+        {
+          "type": "zone_exit",
+          "severity": "alert",
+          "t": 76.4,
+          "track": "A",
+          "message": "Child A left the crib",
+          "data": {
+            "zone": "crib"
+          }
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-cry-episode",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-cry-episode",
+        "durationSec": 300,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              4
+            ]
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "cry_detected",
+          "severity": "alert",
+          "t": 64,
+          "message": "Crying detected"
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-daycare-two-children",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-daycare-two-children",
+        "durationSec": 300,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              1.200000000000017
+            ]
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              1.5999999999999943
+            ]
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "zone_edge",
+          "severity": "warning",
+          "t": 151.4,
+          "track": "B",
+          "message": "Child B is at the edge of the play mat",
+          "data": {
+            "zone": "mat"
+          }
+        },
+        {
+          "type": "zone_exit",
+          "severity": "alert",
+          "t": 155.2,
+          "track": "B",
+          "message": "Child B left the play mat",
+          "data": {
+            "zone": "mat"
+          }
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-lens-covered",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-lens-covered",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              5
+            ]
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "camera_blocked",
+          "severity": "alert",
+          "t": 65,
+          "message": "Camera can't see anything. The lens may be covered or the room is completely dark."
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-lights-off",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-lights-off",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              10
+            ]
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "camera_dark",
+          "severity": "warning",
+          "t": 70,
+          "message": "Too dark for reliable alerts. Try a dim night light."
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-parent-pickup",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-parent-pickup",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": []
+    },
+    {
+      "clip": "synthetic-quiet-night",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-quiet-night",
+        "durationSec": 1800,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": []
+    },
+    {
+      "clip": "synthetic-roll-over",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-roll-over",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              4.400000000000006
+            ]
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "rolled_over",
+          "severity": "alert",
+          "t": 84.4,
+          "track": "A",
+          "message": "Child A may have rolled onto their tummy"
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-scissors-nearby",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-scissors-nearby",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              0.3999999999999986
+            ]
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "hazard_near",
+          "severity": "alert",
+          "t": 50.4,
+          "track": "A",
+          "message": "Scissors spotted near Child A",
+          "data": {
+            "object": "scissors"
+          }
+        }
+      ]
+    },
+    {
+      "clip": "synthetic-sit-up",
+      "source": "synthetic",
+      "score": {
+        "clip": "synthetic-sit-up",
+        "durationSec": 180,
+        "byType": [
+          {
+            "type": "cry_detected",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_edge",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "zone_exit",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "sat_up",
+            "truePositives": 1,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 1,
+            "precision": 1,
+            "recall": 1,
+            "latencies": [
+              3.200000000000003
+            ]
+          },
+          {
+            "type": "rolled_over",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "hazard_near",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_blocked",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_dark",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          },
+          {
+            "type": "camera_moved",
+            "truePositives": 0,
+            "falseAlarms": 0,
+            "missed": 0,
+            "duplicates": 0,
+            "labelled": 0,
+            "precision": null,
+            "recall": null,
+            "latencies": []
+          }
+        ],
+        "falseAlarmEvents": [],
+        "missedLabels": []
+      },
+      "events": [
+        {
+          "type": "sat_up",
+          "severity": "warning",
+          "t": 63.2,
+          "track": "A",
+          "message": "Child A sat up"
+        }
+      ]
+    }
+  ]
+}

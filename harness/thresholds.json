@@ -1,0 +1,15 @@
+{
+  "$comment": "Release gate used by `npm run gate`. Applies to recorded (non-synthetic) clips when any exist, otherwise to synthetic clips.",
+  "maxFalseAlarmsPerHour": 1.0,
+  "minRecall": {
+    "cry_detected": 0.9,
+    "zone_exit": 0.95,
+    "zone_edge": 0.8,
+    "sat_up": 0.8,
+    "rolled_over": 0.8,
+    "hazard_near": 0.8,
+    "camera_blocked": 0.95,
+    "camera_dark": 0.9,
+    "camera_moved": 0.8
+  }
+}

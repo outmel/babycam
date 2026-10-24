@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --bg: #f6efe7;
+  --surface: #fffbf6;
+  --surface-alt: #efe5da;
+  --border: #e2d6c9;
+  --text: #2b2622;
+  --text-muted: #6f655d;
+  --accent: #c8553d;
+  --accent-text: #ffffff;
+  --ok: #3f7048;
+  --warning: #9a6a17;
+  --alert: #b8352a;
+  --info: #4f6578;
+  /* Chart series: reference palette slots 1–3, validated as an adjacent set. */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --grid: #e7ddd2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --bg: #14110f;
+    --surface: #1f1b18;
+    --surface-alt: #2a2521;
+    --border: #3a332d;
+    --text: #f3ece4;
+    --text-muted: #b3a89d;
+    --accent: #e07a5f;
+    --accent-text: #14110f;
+    --ok: #86b38e;
+    --warning: #e2b05a;
+    --alert: #ef6b5b;
+    --info: #93a9bc;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --grid: #2f2925;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #14110f;
+  --surface: #1f1b18;
+  --surface-alt: #2a2521;
+  --border: #3a332d;
+  --text: #f3ece4;
+  --text-muted: #b3a89d;
+  --accent: #e07a5f;
+  --accent-text: #14110f;
+  --ok: #86b38e;
+  --warning: #e2b05a;
+  --alert: #ef6b5b;
+  --info: #93a9bc;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --grid: #2f2925;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-text);
+  --color-ok: var(--ok);
+  --color-warning: var(--warning);
+  --color-alert: var(--alert);
+  --color-info: var(--info);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

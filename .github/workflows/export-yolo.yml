@@ -1,0 +1,25 @@
+# Exports YOLO11n to TFLite on Linux (Ultralytics' TFLite export doesn't run on Windows).
+# Run it from the Actions tab, download the artifact, then:
+#   python models/fetch_models.py --skip-downloads --yolo-file yolo11n_float32.tflite
+name: Export YOLO11n
+
+on:
+  workflow_dispatch:
+    inputs:
+      imgsz:
+        description: Model input size
+        default: '320'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install ultralytics
+      - run: yolo export model=yolo11n.pt format=tflite imgsz=${{ inputs.imgsz }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yolo11n-tflite
+          path: yolo11n_saved_model/yolo11n_float32.tflite

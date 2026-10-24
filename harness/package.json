@@ -1,0 +1,18 @@
+{
+  "name": "@lulu/harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Replays recorded traces through the Lulu pipeline and reports false alarms and missed alerts.",
+  "scripts": {
+    "synth": "tsx src/synth.ts",
+    "replay": "tsx src/synth.ts && tsx src/run.ts",
+    "gate": "tsx src/synth.ts && tsx src/run.ts --gate",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

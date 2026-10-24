@@ -1,0 +1,14 @@
+{
+  "name": "lulu",
+  "private": true,
+  "description": "Lulu: turn any two phones into a private, smart baby monitor.",
+  "scripts": {
+    "setup": "npm --prefix packages/core install && npm --prefix harness install && npm --prefix supabase/tests install && npm --prefix apps/web install && npm --prefix apps/mobile install",
+    "test": "npm --prefix packages/core test && npm --prefix supabase/tests test && npm --prefix harness run gate",
+    "typecheck": "npm --prefix packages/core run typecheck && npm --prefix harness run typecheck && cd apps/mobile && npx tsc --noEmit && cd ../web && npx tsc --noEmit",
+    "replay": "npm --prefix harness run replay",
+    "models": "python models/fetch_models.py",
+    "web": "npm --prefix apps/web run dev",
+    "mobile": "npm --prefix apps/mobile start"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@lulu/supabase-tests",
+  "private": true,
+  "type": "module",
+  "description": "Runs the migration in embedded Postgres (PGlite) with Supabase stand-ins and checks roles, RLS, invites, live-channel access, offline alerts and the push trigger.",
+  "scripts": { "test": "node rls.test.mjs" },
+  "devDependencies": { "@electric-sql/pglite": "^0.3.0" }
+}

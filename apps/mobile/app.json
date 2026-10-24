@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "Lulu",
+    "slug": "lulu",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "lulu",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "app.lulu.monitor",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Lulu uses the camera to watch over your child. Video is analyzed on this phone and is never uploaded.",
+        "NSMicrophoneUsageDescription": "Lulu listens for crying on this phone. Audio is never recorded or uploaded.",
+        "NSMotionUsageDescription": "Lulu notices if the camera phone gets bumped or moved."
+      }
+    },
+    "android": {
+      "package": "app.lulu.monitor",
+      "adaptiveIcon": {
+        "backgroundColor": "#F6EFE7",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.WAKE_LOCK"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F6EFE7",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "react-native-fast-tflite",
+        {
+          "enableCoreMLDelegate": true,
+          "enableAndroidGpuLibraries": true
+        }
+      ],
+      [
+        "@config-plugins/react-native-webrtc",
+        {
+          "cameraPermission": "Lulu streams live video directly to your family's phones, encrypted end to end.",
+          "microphonePermission": "Lulu streams live audio directly to your family's phones, encrypted end to end."
+        }
+      ],
+      [
+        "react-native-audio-api",
+        {
+          "iosMicrophonePermission": "Lulu listens for crying on this phone. Audio is never recorded or uploaded.",
+          "iosBackgroundMode": true,
+          "androidForegroundService": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#C8553D"
+        }
+      ],
+      "expo-sharing",
+      "expo-asset",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
