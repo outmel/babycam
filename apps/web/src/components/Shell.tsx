@@ -8,6 +8,7 @@ import { LuluProvider, useLulu } from '@/lib/lulu';
 import { isConfigured, supabase } from '@/lib/supabase';
 
 import { Login } from './Login';
+import { Onboarding } from './Onboarding';
 
 const NAV = [
   { href: '/', label: 'Overview' },
@@ -32,17 +33,7 @@ function Frame({ children }: { children: ReactNode }) {
   }
   if (!ready) return null;
   if (!session) return <Login />;
-  if (!memberships.length) {
-    return (
-      <div className="mx-auto mt-16 max-w-lg px-4">
-        <h1 className="text-2xl font-bold">No family yet</h1>
-        <p className="mt-3 text-muted">Create a family or join one with an invite code in the Lulu mobile app, then come back.</p>
-        <button className="mt-6 text-sm underline" onClick={() => supabase.auth.signOut()}>
-          Sign out
-        </button>
-      </div>
-    );
-  }
+  if (!memberships.length) return <Onboarding />;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16">

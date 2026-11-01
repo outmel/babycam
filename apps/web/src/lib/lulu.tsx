@@ -18,6 +18,11 @@ interface LuluState {
 const Ctx = createContext<LuluState | null>(null);
 const KEY = 'lulu.household';
 
+// supabase.channel() returns an existing channel with the same topic, which throws if it's already
+// subscribed, so each subscription gets its own topic.
+let channelSeq = 0;
+const topic = (name: string) => `${name}:${++channelSeq}`;
+
 function readStored(): string | null {
   try {
     return localStorage.getItem(KEY);
@@ -100,7 +105,7 @@ export function useCameras(householdId: string | null) {
     if (!householdId) return;
     void load();
     const ch = supabase
-      .channel(`web-cameras:${householdId}`)
+      .channel(topic(`web-cameras:${householdId}`))
       .on('postgres_changes', { event: '*', schema: 'public', table: 'cameras', filter: `household_id=eq.${householdId}` }, () => void load())
       .subscribe();
     // Re-render "last seen" times even when nothing changes.
@@ -134,7 +139,7 @@ export function useEvents(householdId: string | null, sinceDays: number) {
     if (!householdId) return;
     void load();
     const ch = supabase
-      .channel(`web-events:${householdId}:${sinceDays}`)
+      .channel(topic(`web-events:${householdId}:${sinceDays}`))
       .on('postgres_changes', { event: '*', schema: 'public', table: 'events', filter: `household_id=eq.${householdId}` }, () => void load())
       .subscribe();
     return () => {

@@ -3,11 +3,13 @@
  *
  * Event rows don't identify children across a whole night (track labels are anonymous and
  * reset), so the summary describes the room, which works for one child per camera.
+ *
+ * No imports: the notify Edge Function (Deno) imports this file directly for the morning push.
  */
-import type { EventType } from './types';
 
 export interface StoredEvent {
-  type: EventType | string;
+  /** An EventType, or any other stored type string. */
+  type: string;
   occurredAt: Date | string;
   data?: Record<string, unknown> | null;
 }
