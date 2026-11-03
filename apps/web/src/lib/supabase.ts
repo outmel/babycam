@@ -26,8 +26,8 @@ export interface CameraRow {
   id: string;
   household_id: string;
   name: string;
-  zones: unknown[];
-  settings: { mount?: string };
+  zones: { id: string; name: string; points: unknown[] }[];
+  settings: { mount?: string; position?: string };
   status: { battery?: number; charging?: boolean; analysis?: string; fps?: number; models?: string };
   online: boolean;
   last_seen_at: string | null;

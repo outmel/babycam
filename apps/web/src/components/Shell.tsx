@@ -14,6 +14,7 @@ const NAV = [
   { href: '/', label: 'Overview' },
   { href: '/sleep', label: 'Sleep log' },
   { href: '/history', label: 'History' },
+  { href: '/nursery', label: 'Nursery' },
   { href: '/family', label: 'Family' },
 ];
 

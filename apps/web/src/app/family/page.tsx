@@ -99,35 +99,23 @@ export default function Family() {
             <Button onClick={() => run(supabase.rpc('create_invite', { p_household: householdId, p_role: role }))}>Create invite code</Button>
           </div>
           {invites.length > 0 && (
-            <table className="tabular mt-4 w-full text-sm">
-              <thead className="text-left text-muted">
-                <tr>
-                  <th className="py-1 font-medium">Code</th>
-                  <th className="py-1 font-medium">Role</th>
-                  <th className="py-1 font-medium">Status</th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                {invites.map((i) => {
-                  const expired = new Date(i.expires_at) < new Date();
-                  return (
-                    <tr key={i.id} className="border-t border-line">
-                      <td className="py-2 font-mono tracking-widest">{i.code}</td>
-                      <td className="py-2 capitalize">{i.role}</td>
-                      <td className="py-2 text-muted">{i.redeemed_at ? 'Used' : expired ? 'Expired' : `Valid until ${new Date(i.expires_at).toLocaleDateString()}`}</td>
-                      <td className="py-2 text-right">
-                        {!i.redeemed_at && !expired && (
-                          <button className="text-xs font-semibold text-accent" onClick={() => run(supabase.from('invites').delete().eq('id', i.id))}>
-                            Revoke
-                          </button>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <ul className="mt-4 divide-y divide-line border-t border-line text-sm">
+              {invites.map((i) => {
+                const expired = new Date(i.expires_at) < new Date();
+                return (
+                  <li key={i.id} className="flex flex-wrap items-center gap-x-4 gap-y-1 py-3">
+                    <span className="font-mono tracking-widest">{i.code}</span>
+                    <span className="capitalize">{i.role}</span>
+                    <span className="text-muted">{i.redeemed_at ? 'Used' : expired ? 'Expired' : `Valid until ${new Date(i.expires_at).toLocaleDateString()}`}</span>
+                    {!i.redeemed_at && !expired && (
+                      <button className="ml-auto text-xs font-semibold text-accent" onClick={() => run(supabase.from('invites').delete().eq('id', i.id))}>
+                        Revoke
+                      </button>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
           )}
         </Card>
       )}
