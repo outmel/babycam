@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { Button, Card, Label, Pill } from '@/components/ui';
+import { ZoneEditor } from '@/components/ZoneEditor';
 import { timeAgo, useCameras, useLulu } from '@/lib/lulu';
 import { supabase, type CameraRow } from '@/lib/supabase';
 
@@ -91,7 +92,8 @@ function CameraCard({ camera, canEdit, isOwner }: { camera: CameraRow; canEdit: 
             ))}
           </ul>
         )}
-        <p className="text-xs text-muted">To draw or reshape a zone, use the camera phone (Camera, then this camera). It needs the live picture.</p>
+        {canEdit && <ZoneEditor zones={zones} onAdd={(z) => edit(setZones)([...zones, z])} />}
+        <p className="text-xs text-muted">Zones are saved with Save changes. You can also redraw them on the camera phone with its live picture.</p>
       </div>
 
       {error && <p className="text-sm text-alert">{error}</p>}
