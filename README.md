@@ -71,12 +71,14 @@ The decision logic lives in **`packages/core`**, which is pure TypeScript with n
    - Push needs an EAS project id: run `eas init`.
 5. **Web:** copy `apps/web/.env.example` to `.env.local`, then run `npm run web`.
 
-**Deploying the dashboard (Deployxa or any Node host):**
-- Set the project root to the **repository root**, because the dashboard imports `packages/core`.
-- Install command: `npm --prefix packages/core install && npm --prefix apps/web install`
-- Build command: `npm --prefix apps/web run build`
-- Start command: `npm --prefix apps/web start`
-- Add the two `NEXT_PUBLIC_SUPABASE_*` variables.
+**Deploying the dashboard to Railway (a link for phones and laptops):**
+1. Push the repo to GitHub, then in Railway choose **New Project → Deploy from GitHub repo**. Leave the root directory as the repo root. [railway.json](railway.json) supplies the build and start commands.
+2. In **Variables**, add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. They are baked in at build time, so redeploy after changing them.
+3. In **Settings → Networking**, click **Generate Domain**. Open that `https://…up.railway.app` link on any phone or laptop.
+4. In Supabase → Authentication → URL Configuration, add the Railway URL to the allowed redirect URLs.
+5. On a phone, use Share → **Add to Home Screen** and it opens full-screen like an app.
+
+The link gives the dashboard (alerts, sleep log, history, family). The camera phone still needs the native build because it runs the on-device models.
 
 **Using it:**
 1. Sign in on both phones with the same account (or invite others from Family).
